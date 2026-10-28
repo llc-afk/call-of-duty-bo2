@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110e">
+  <meta name="description" content="Dead Signal é um jogo original de sobrevivência em ondas, jogável direto no navegador.">
+  <meta property="og:title" content="Dead Signal — sobrevivência em ondas">
+  <meta property="og:description" content="Sobreviva às hordas em um jogo original que roda direto no navegador.">
+  <meta property="og:type" content="website">
+  <title>Dead Signal — sobrevivência em ondas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="#">DEAD<span>SIGNAL</span></a><span class="tag">JOGO DE SOBREVIVÊNCIA NO NAVEGADOR</span></header>
+    <section class="game-wrap">
+      <canvas id="game" aria-label="Jogo de sobrevivência contra zumbis"></canvas>
+      <div class="screen" id="screen">
+        <div class="eyebrow">PROTOCOLO DE EMERGÊNCIA · 02:17 AM</div>
+        <h1>FIQUE VIVO.</h1>
+        <p>As luzes caíram. As barricadas não vão aguentar para sempre.</p>
+        <button id="start">INICIAR PARTIDA <span>→</span></button>
+        <div class="controls"><span><b>W A S D</b> mover</span><span><b>MOUSE</b> mirar</span><span><b>CLIQUE</b> atirar</span><span><b>R</b> recarregar</span><span><b>E</b> comprar cura</span></div>
+      </div>
+      <div class="hud hidden" id="hud">
+        <div class="hud-top"><div class="round-label">RONDA <strong id="round">1</strong></div><div class="objective" id="objective">ELIMINE A HORDA</div><div class="counter"><span id="left">0</span> RESTANTES</div></div>
+        <div class="center-mark">+</div>
+        <div class="hud-bottom"><div><small>PONTOS</small><strong id="points">500</strong></div><div class="weapon">M1911 <small id="ammo">8 / 32</small></div><div class="health"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="toast" id="toast"></div>
+        <button class="pause-button" id="pause" type="button" aria-label="Pausar jogo">PAUSAR</button>
+      </div>
+    </section>
+    <footer><span>Uma experiência original de sobrevivência em ondas.</span><span>Sem arquivos externos ou downloads de assets.</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
