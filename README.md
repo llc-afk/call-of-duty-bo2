@@ -1,20 +1,22 @@
-# Dead Signal
+# Outpost 09
 
-Jogo original de sobrevivência em ondas, feito em HTML, CSS e JavaScript. Roda diretamente no navegador, sem instalação, backend ou arquivos externos.
+Um FPS original de sobrevivência em ondas, feito com Canvas 2D, HTML, CSS e JavaScript puro. O cenário, os inimigos e a arma são desenhados proceduralmente pelo próprio jogo. Não há arquivos de Call of Duty, dependências externas, servidor ou downloads.
 
-## Como jogar
+## Jogar
 
-- **W / A / S / D**: mover
-- **Mouse**: mirar
-- **Clique**: atirar
-- **R**: recarregar
-- **E**: comprar cura por 200 pontos
-- **Esc** ou botão **Pausar**: pausar
+Abra `index.html` ou publique o repositório com GitHub Pages.
 
-Abra `index.html` no navegador para jogar localmente. Para hospedar, publique os arquivos deste projeto em qualquer serviço de páginas estáticas.
+- **W / A / S / D:** mover
+- **Mouse:** mirar
+- **Clique:** disparar
+- **R:** recarregar
+- **E:** comprar um kit médico por 200 pontos
+- **Esc:** pausar
 
-## Publicar com GitHub Pages
+Sobreviva às ondas, elimine as criaturas e use os pontos para recuperar vida. Cada onda concluída aumenta a dificuldade.
 
-O workflow em `.github/workflows/pages.yml` publica o site automaticamente quando houver um push para a branch `main`. No repositório, habilite **Settings → Pages → Build and deployment → GitHub Actions**. O jogo ficará disponível no endereço de Pages mostrado pelo GitHub.
+## Publicação
 
-Este projeto é uma criação independente com gráficos desenhados no canvas. Não inclui nem requer executáveis, mapas, áudio ou outros arquivos de Call of Duty / Black Ops 2 e não é afiliado à Activision.
+O workflow em `.github/workflows/pages.yml` publica automaticamente a branch `main` no GitHub Pages. Em **Settings → Pages**, selecione **GitHub Actions** como fonte de publicação. Depois do workflow concluir, o endereço aparece nessa mesma página.
+
+Outpost 09 é um projeto independente e não é afiliado à Activision ou a Call of Duty.
